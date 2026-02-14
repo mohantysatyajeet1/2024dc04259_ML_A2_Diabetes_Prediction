@@ -8,7 +8,7 @@ import joblib
 # -----------------------------
 @st.cache_resource
 def load_model():
-    model = joblib.load(r"C:\Users\91956\Desktop\ML2_Diabetes_Prediction\best_model.pkl")
+    model = joblib.load("best_model.pkl")
     model_name = "Random Forest"
     return model
 
